@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Ebac</title>
+</head>
+<body>
+    <h1>Formulario de cadastro</h1>
+    <form>
+        <label for="nome">Digite seu nome</label>
+        <input id="nome" type="text"/><br/>
+        <label for="email">Digite seu e-mail</label>
+        <input id="email" type="email"/><br/>
+        <label for="senha">Digite uma senha</label>
+        <input id="senha" type="password"/><br/>
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
+
+
+
+<!--  Eu pensei em colocar o codigo assim, mas depois que aceitava o alert a pagina dava erro
+
+    <form name="Formulario" onsubmit="return confirmarformulario()" method="post">
+        <label for="nome">Digite seu nome</label>
+        <input id="nome" type="text"/><br/>
+        <label for="email">Digite seu e-mail</label>
+        <input id="email" type="email"/><br/>
+        <button type="submit" onclick="funcao1()" value="Exibir Alert">Enviar Formulario</button>
+    </form>
+    <script>
+        function confirmarformulario()
+        { var nomepessoa = document.forms["Formulario"]["nome"].value;
+          var emailpessoa = document.forms["Formulario"]["email"].value;
+        alert("Ola " + nomepessoa + ", seu email seria " + emailpessoa + "?");
+        }
+    </script>
+-->
