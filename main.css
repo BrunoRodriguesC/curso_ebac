@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(214, 211, 211);
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#Bloco {
+    height: 100%;
+    min-height: 500px;
+    width: 60%;
+    margin: auto;
+    margin-top: 180px;
+    background-color: black;
+    opacity: 90%;
+    display: flex;
+    box-shadow: 0px 50px 70px black;
+}
+
+.center {
+    margin: auto;
+    margin-top: auto;
+    text-align: center;
+    display: flex;
+    max-width: 800px;
+    height: 350px;
+    width: 800px;
+    box-shadow:  0px 10px 19px rgba(16, 172, 189, 0.551);
+}
+
+h3 {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+#Botao_Esquerdo {
+    height: 30px;
+    width: 300px;
+    color: white;
+    background-color: black;
+}
+
+#Botao_Direito {
+    height: 30px;
+    width: 300px;
+    color: white;
+    background-color: black;
+}
+
+#Botao_Enviar {
+    height: 35px;
+    width: 300px;
+    color: white;
+    background-color: black;
+    margin-top: 20px;
+}
+
+
+#Sucesso {
+    display: none;
+    font-size: 22px;
+    color: green;
+    margin-bottom: 0%;
+}
+
+#Erro {
+    display: none;
+    font-size: 22px;
+    color: red;
+    margin-top: 0;
+}

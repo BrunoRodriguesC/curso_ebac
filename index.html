@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="10">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>Exercicio de Validação</title>
+</head>
+<body>
+    <div id="Bloco">
+        <section class="center">
+            <form id="form-deposito">
+                <h3>O Botao da direita deve ter um valor maior que o da esquerda</h3>
+                <input type="number" id="Botao_Esquerdo" min="0" required placeholder="Digite um valor: ">
+                <input type="number" id="Botao_Direito" min="0" required placeholder="Digite um valor: ">
+                <button id="Botao_Enviar" type="submit">Enviar</button>
+                <h3 id="Sucesso">O Botão da Direita é Maior</h3>
+                <h3 id="Erro">O Botão da Direita é Menor</h3>
+            </form>
+        </section>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
