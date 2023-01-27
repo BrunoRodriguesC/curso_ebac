@@ -12,7 +12,7 @@ $(document).ready(function() {
         $(adicionarTarefa).appendTo('ul')
         $('#inputTarefa').val('')
         $("li").click(function() {
-            $("li").css("text-decoration","line-through");
+            $(this).addClass("Riscado");
         });
        
     })
