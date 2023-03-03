@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.932);
+}
+
+.container {
+    height: 100%;
+    max-width: 30%;
+}
+
+.row {
+    height: 700px;
+}
+
+.col {
+    height: 100%;
+    margin: 30% 0;
+    color: whitesmoke;
+    padding: 20% 10%;
+    border-radius: 20px;
+    box-shadow: 2px 5px 15px 5px purple;
+    background-color: rgba(97, 97, 97, 0.644);
+}
+
+.col h2 {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.form-floating {
+    color: black;
+}
+
+input{
+    margin-bottom: 16px;
+}
+
+.invalid-feedback {
+    margin-bottom: 24px;
+}
+
+.form-check {
+    margin-bottom: 30px;
+}
+
+button {
+    margin-left: 30%;
+    width: 200px;
+}
