@@ -1,0 +1,110 @@
+@use 'config/reset';
+@use 'config/variaveis';
+@use 'sass:math';
+
+@function PixelparaEm($pixel, $valorDoPixelPai: 16px) {
+    @return math.div($pixel, $valorDoPixelPai)+em;
+}
+
+
+body {
+    background-color: variaveis.$corDoBody;
+}
+
+header {
+    top: 0;
+    left: 0;
+    position: sticky;
+    background-color: variaveis.$corDoHeader;
+    
+    .container {
+        display: flex;
+        padding: 16px 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
+
+.menu {
+    display: flex;
+    
+    li {
+        list-style: none;
+        font-weight: bold;
+        margin-left: PixelparaEm(24px);
+        
+        a {
+            text-decoration: none;
+            color: variaveis.$corDoTexto;
+        }
+    }
+    
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;
+  
+}
+section {
+    padding: 56px 0;
+    
+    .products {
+        width: 100%;
+        margin-top: PixelparaEm(40px);
+        list-style: none;
+        display: grid;
+        row-gap: 4%;
+        column-gap: 1%;
+        grid-template-columns: repeat(3, 32.66%);
+        
+        .product-item img {
+            width: 100%;
+            border-radius: 16px;
+        }
+        
+        .product-button {
+            display: block;
+            color: variaveis.$corDoTexto;
+            background-color: variaveis.$corDoButton;
+            text-decoration: none;
+            text-align: center;
+            padding: 8px 0;
+            border-radius: 8px;
+            margin-top: PixelparaEm(8px);
+            
+            &:hover {
+                background-color: lighten(variaveis.$corDoButton, 10%);
+            }
+        }
+        
+    }
+}
+
+
+
+@media screen and (max-width: variaveis.$tablet) {
+    .container {
+        max-width: 80%;
+        
+        .products {
+            grid-template-columns: repeat(2, 48.5%);
+            column-gap: 3%;
+        }
+    }
+
+}
+
+@media screen and (max-width: variaveis.$mobile) {
+    .products {
+        display: block;
+        
+        .product-item  {
+            margin-bottom: PixelparaEm(32px);
+        }
+    }
+
+}

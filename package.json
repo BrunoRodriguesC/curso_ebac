@@ -1,0 +1,15 @@
+{
+  "name": "exercicio_15",
+  "version": "1.0.0",
+  "description": "exercicio do Modulo-15 do curso Ebac",
+  "main": "index.js",
+  "scripts": {
+    "exercicio_15": "sass source/main.scss build/main.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bruno Rodrigues da Silva",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.59.3"
+  }
+}
